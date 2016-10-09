@@ -2,19 +2,19 @@ import os
 import subprocess
 import os.path
 
-def apt_get_install(what):
+def apt_get_install(fname):
     with open(fname, 'r') as f:
         items = f.readlines()
     for item in items:
         os.system('sudo apt-get install -y %s' % (item))
 
-def npm_global_install(what):
+def npm_global_install(fname):
     with open(fname, 'r') as f:
         items = f.readlines()
     for item in items:
         os.system('sudo npm -g install %s' % (item))
 
-def pip_install(what):
+def pip_install(fname):
     with open(fname, 'r') as f:
         items = f.readlines()
     for item in items:
