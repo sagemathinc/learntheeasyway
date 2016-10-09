@@ -1,5 +1,6 @@
 git
 python-pip
 nodejs
+nodejs-legacy
 npm
 nginx
