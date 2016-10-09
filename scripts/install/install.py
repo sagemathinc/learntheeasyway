@@ -21,7 +21,7 @@ def pip_install(fname):
         items = f.readlines()
     for item in items:
         if item.strip():
-            os.system('sudo pip install %s' % (item))
+            os.system('sudo -H pip install %s' % (item))
 
 def cmd_exists(cmd):
     # this is from http://stackoverflow.com/questions/377017/test-if-executable-exists-in-python
