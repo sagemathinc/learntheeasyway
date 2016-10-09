@@ -73,8 +73,8 @@ debug = true
 # 'access_control_allow_origin' sets a host that can access auth settings
 #   (typically your frontend host)
 #------------------------------------------------------------------------------
-allow_anonymous = false
-allow_unauthenticated = false
+allow_anonymous = true
+allow_unauthenticated = true
 # auth_redirect = "/"
 # access_control_allow_origin = ""
 #
