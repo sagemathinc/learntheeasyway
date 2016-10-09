@@ -27,7 +27,7 @@ secure = false
 # 'serve_static' will serve files from the given directory over HTTP/HTTPS
 #------------------------------------------------------------------------------
 project_name = "learntheeasyway"
-# serve_static = "dist"
+serve_static = "dist"
 
 
 ###############################################################################
@@ -59,7 +59,7 @@ rdb_timeout = 30
 # Debug Options
 # 'debug' enables debug log statements
 #------------------------------------------------------------------------------
-# debug = false
+debug = true
 
 
 ###############################################################################
