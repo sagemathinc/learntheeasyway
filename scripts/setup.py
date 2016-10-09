@@ -10,7 +10,7 @@ def cmd_exists(cmd):
         stdout=subprocess.PIPE, stderr=subprocess.PIPE) == 0
 
 def ensure_installed(what, how):
-    if 'how' == 'apt-get':
+    if how == 'apt-get':
         if not cmd_exists(what):
             apt_get_install(what)
 
