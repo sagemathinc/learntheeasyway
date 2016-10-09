@@ -5,8 +5,8 @@
 # 'bind' controls which local interfaces will be listened on
 # 'port' controls which port will be listened on
 #------------------------------------------------------------------------------
-# bind = [ "localhost" ]
-# port = 8181
+bind = [ "localhost" ]
+port = 8181
 
 
 ###############################################################################
@@ -14,7 +14,7 @@
 # 'secure' will disable HTTPS and use HTTP instead when set to 'false'
 # 'key_file' and 'cert_file' are required for serving HTTPS
 #------------------------------------------------------------------------------
-# secure = false
+secure = false
 # for now serve via nginx and use cloudflare
 # key_file = "horizon-key.pem"
 # cert_file = "horizon-cert.pem"
@@ -50,9 +50,9 @@ project_name = "learntheeasyway"
 # 'start_rethinkdb' will run an internal RethinkDB instance
 # 'rdb_timeout' is the number of seconds to wait when connecting to RethinkDB
 #------------------------------------------------------------------------------
-# connect = "localhost:28015"
-# start_rethinkdb = false
-# rdb_timeout = 30
+connect = "localhost:28015"
+start_rethinkdb = true
+rdb_timeout = 30
 
 
 ###############################################################################
@@ -73,8 +73,8 @@ project_name = "learntheeasyway"
 # 'access_control_allow_origin' sets a host that can access auth settings
 #   (typically your frontend host)
 #------------------------------------------------------------------------------
-# allow_anonymous = false
-# allow_unauthenticated = false
+allow_anonymous = false
+allow_unauthenticated = false
 # auth_redirect = "/"
 # access_control_allow_origin = ""
 #
