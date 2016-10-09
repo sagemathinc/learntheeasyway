@@ -1,5 +1,5 @@
 import os
-import subproccess
+import subprocess
 
 def apt_get_install(what):
     os.system('sudo apt-get install %s' % (what))
