@@ -2,7 +2,7 @@ import os
 import subprocess
 
 def apt_get_install(what):
-    os.system('sudo apt-get install %s' % (what))
+    os.system('sudo apt-get install -y %s' % (what))
 
 def cmd_exists(cmd):
     # this is from http://stackoverflow.com/questions/377017/test-if-executable-exists-in-python
@@ -17,5 +17,5 @@ def ensure_installed(what, how):
 items_to_ensure_installed = []
 items_to_ensure_installed.append({'what': 'git', 'how': 'apt-get'})
 
-for item in ensure_installed:
+for item in items_to_ensure_installed:
     ensure_installed(**item)
