@@ -16,6 +16,8 @@ def ensure_installed(what, how):
 
 items_to_ensure_installed = []
 items_to_ensure_installed.append({'what': 'git', 'how': 'apt-get'})
+items_to_ensure_installed.append({'what': 'nodejs', 'how': 'apt-get'})
+items_to_ensure_installed.append({'what': 'npm', 'how': 'apt-get'})
 
 for item in items_to_ensure_installed:
     ensure_installed(**item)
