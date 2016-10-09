@@ -6,7 +6,7 @@ import string
 scripts_dir = os.path.dirname(os.path.abspath(__file__))
 secrets_path = os.path.join(scripts_dir, '../..', '.hz', 'secrets.toml')
 secrets_template_path = os.path.join(scripts_dir, 'secrets_template.toml')
-if not os.path.isfile(fpath):
+if not os.path.isfile(secrets_path):
     with open(secrets_template_path, 'r') as f:
         secrets_toml = f.read()
     # generate secret token
