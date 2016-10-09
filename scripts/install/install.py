@@ -29,7 +29,7 @@ functions_to_handle_requirements = {}
 functions_to_handle_requirements['apt_get'] = apt_get_install
 functions_to_handle_requirements['npm'] = npm_global_install
 functions_to_handle_requirements['pip'] = pip_install
-
+print functions_to_handle_requirements['npm']
 order_of_files_to_handle = ['apt_get_requirements.txt', 'npm_requirements.txt', 'pip_requirements.txt']
 
 for fname in order_of_files_to_handle:
