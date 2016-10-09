@@ -27,7 +27,7 @@ def cmd_exists(cmd):
 
 functions_to_handle_requirements = {}
 functions_to_handle_requirements['apt_get'] = apt_get_install
-functions_to_handle_requirements['npm_global'] = npm_global_install
+functions_to_handle_requirements['npm'] = npm_global_install
 functions_to_handle_requirements['pip'] = pip_install
 
 order_of_files_to_handle = ['apt_get_requirements.txt', 'npm_requirements.txt', 'pip_requirements.txt']
