@@ -50,7 +50,7 @@ project_name = "learntheeasyway"
 # 'start_rethinkdb' will run an internal RethinkDB instance
 # 'rdb_timeout' is the number of seconds to wait when connecting to RethinkDB
 #------------------------------------------------------------------------------
-connect = "localhost:28015"
+#connect = "localhost:28015"
 start_rethinkdb = true
 rdb_timeout = 30
 
