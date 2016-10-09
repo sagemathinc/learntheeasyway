@@ -35,7 +35,7 @@ server {
 	server_name _;
 	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
     location / {	#
-        proxy_pass http://localhost:8185;	#location ~ \.php$ {
+        proxy_pass http://localhost:8181;	#location ~ \.php$ {
         proxy_set_header Host $host;	#	include snippets/fastcgi-php.conf;
         proxy_set_header X-Real-IP $remote_addr;	#
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;	#	# With php7.0-cgi alone:
