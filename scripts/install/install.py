@@ -41,3 +41,6 @@ for fname in order_of_files_to_handle:
         l = len('_requirements.txt')
         fname_first_part = fname[:-l]
         functions_to_handle_requirements[fname_first_part](fname)
+        
+if os.path.isfile('install.sh'):
+    os.system('sh install.sh')
