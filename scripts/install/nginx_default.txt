@@ -16,7 +16,11 @@
 server {
 	listen 80;
 	listen [::]:80;
+    listen 443 ssl http2 _;
+    listen [::]:443 ssl _;
 
+    include snippets/self-signed.conf;
+    include snippets/ssl-params.conf;
 	# SSL configuration
 	#
 	# listen 443 ssl default_server;

@@ -5,5 +5,6 @@ sudo apt-get update
 sudo apt-get install -y rethinkdb
 ABSOLUTE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 sudo cp $ABSOLUTE_DIR/nginx_default.txt /etc/nginx/sites-available/default
+sudo cp $ABSOLUTE_DIR/ssl-params.conf /etc/nginx/snippets/ssl-params.conf
 sudo service nginx restart
 python $ABSOLUTE_DIR/configure_secrets.py
