@@ -5,3 +5,4 @@ template = "any()"
 [collections.courses]
 [collections.chapters]
 [collections.lessons]
+
