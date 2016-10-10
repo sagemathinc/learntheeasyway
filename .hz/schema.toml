@@ -1,3 +1,7 @@
 [groups.admin]
 [groups.admin.rules.carte_blanche]
 template = "any()"
+
+[collections.courses]
+[collections.chapters]
+[collections.lessons]
